@@ -1,10 +1,10 @@
 ﻿/* モバイルおよびパソコン向けの共通のスタイル */
-
-/* モバイル向けスタイル */
 body {
     background-color: #333;
     font-family: Helvetica, Verdana, Arial, sans-serif;
     text-align: center;
+    margin: 0; /* 余白を削除 */
+    padding: 0; /* パディングを削除 */
 }
 
 /* メディアクエリを使用して、画面幅が768px以上の場合に適用するスタイル */
@@ -13,27 +13,25 @@ body {
         background-color: #fff; /* パソコン向けの背景色を白に設定 */
         font-family: Arial, sans-serif; /* パソコン向けのフォント設定 */
         text-align: left; /* パソコン向けのテキスト配置を左寄せに設定 */
-        overflow: hidden; /* スクロールバーを非表示にする */
-        /* 他のパソコン向けスタイルを追加 */
     }
     
     /* 以下、その他のスタイル設定 */
 }
 
-    a:link,
-    a:visited {
-        color: #0078d4; /* パソコン向けのリンクの色を青に設定 */
-    }
+a:link,
+a:visited {
+    color: #0078d4; /* パソコン向けのリンクの色を青に設定 */
+}
 
-    p.header {
-        font-size: medium; /* パソコン向けのヘッダーテキストのフォントサイズを中程度に */
-    }
+p.header {
+    font-size: medium; /* パソコン向けのヘッダーテキストのフォントサイズを中程度に */
+}
 
-    p.footer {
-        font-size: small; /* パソコン向けのフッターテキストのフォントサイズを小さいサイズに */
-    }
+p.footer {
+    font-size: small; /* パソコン向けのフッターテキストのフォントサイズを小さいサイズに */
 }
 
 #Cocos2dGameContainer {
-    height: 100vh; /* 画面の高さに合わせる */
+    height: 100%; /* 画面の高さに合わせる */
+    overflow: hidden; /* スクロールバーを非表示にする */
 }
