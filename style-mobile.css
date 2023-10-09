@@ -13,8 +13,12 @@ body {
         background-color: #fff; /* パソコン向けの背景色を白に設定 */
         font-family: Arial, sans-serif; /* パソコン向けのフォント設定 */
         text-align: left; /* パソコン向けのテキスト配置を左寄せに設定 */
+        overflow: hidden; /* スクロールバーを非表示にする */
         /* 他のパソコン向けスタイルを追加 */
     }
+    
+    /* 以下、その他のスタイル設定 */
+}
 
     a:link,
     a:visited {
@@ -29,3 +33,4 @@ body {
         font-size: small; /* パソコン向けのフッターテキストのフォントサイズを小さいサイズに */
     }
 }
+
