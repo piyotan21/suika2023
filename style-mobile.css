@@ -34,3 +34,6 @@ body {
     }
 }
 
+#Cocos2dGameContainer {
+    height: 100vh; /* 画面の高さに合わせる */
+}
